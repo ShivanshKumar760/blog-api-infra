@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'blog-api',
       script: 'src/server.js',
-      cwd: '/opt/blog-api/app',
+      cwd: '/opt/blog-api',
       exec_mode: 'cluster',
       instances: 'max', // one worker per vCPU
       max_memory_restart: '400M',
