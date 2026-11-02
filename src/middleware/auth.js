@@ -32,5 +32,5 @@ export const requiredRole = (...roles)=>(req,res,next)=>{
 };
 
 export const signToken = (user) => {
-    return jwt.sign({sub:user.id,role:user.role},config.jwtSecret,{algorithms:'HS256',expiresIn:config.jwtExpiresIn,});
+    return jwt.sign({sub:user.id,role:user.role},config.jwtSecret,{algorithm:'HS256',expiresIn:config.jwtExpiresIn,});
 };
